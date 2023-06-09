@@ -1,37 +1,28 @@
-const { Country, Activity } = require('../db');
-const { Op } = require('sequelize')
+const {controllersCountriesName, controllerCountryAll, controllerCountryID} = require('../controllers/controllerCountry')
 
 
-// buscamos los paises
+// buscamos todos los paises
 const getCountries = async (req, res) => {
   try {
-    const countries = await Country.findAll({
-      include: [{ model: Activity }],
-      order: [["name", "ASC"]],
-    });
-    res.status(200).json(countries);
+    const response = await controllerCountryAll()
+    res.status(200).json(response);
   } catch (error) {
-    console.error('Error al obtener los países:', error);
-    res.status(500).json({ error: 'Error al obtener los países' });
+    res.status(404).json({ error: 'Error al obtener los países' });
   }
 };
 
 //buscamos por nombre
 const getCountriesByName = async (req, res) => {
+  const { name } = req.query;
   try {
-    const { name } = req.query;
-    const countries = await Country.findAll({
-      where: { name: { [Op.iLike]: `${name}` } },
-      include: [{ model: Activity }],
-    });
-
-    if (countries.length === 0) {
-      return res.status(404).json({ error: 'No se encontraron países' });
+    if(name){
+      const response = await controllersCountriesName(name);
+      return res.status(200).json(response);
     }
-
-    res.status(200).json(countries);
+    const response = await controllersCountriesName();
+    return res.status(200).json(response);
   } catch (error) {
-    res.status(500).json({ error: 'Error al obtener los países por nombre' });
+    res.status(404).json({ error: 'Error al obtener los países por nombre' });
   }
 };
 
@@ -39,19 +30,15 @@ const getCountriesByName = async (req, res) => {
 const getCountryById = async (req, res) => {
   const { idPais } = req.params;
   try {
-    const country = await Country.findOne({
-      where: { id: { [Op.iLike]: `${idPais}` } },
-      include: [{ model: Activity }],
-    });
-
-    if (!country) {
-      return res.status(404).json({ error: 'País no encontrado' });
+    if(!isNaN(idPais)){
+      return res.status(400).send(`ID ${idPais} no valido`)
+    }else if(idPais.length !==3){
+      return res.status(400).send(`ID ${idPais} no valido`)
     }
-
-    res.status(200).json(country);
+    const response = await controllerCountryID(idPais)
+    return res.status(200).json(response);
   } catch (error) {
-    console.error('Error al obtener el país:', error);
-    res.status(500).json({ error: 'Error al obtener el país' });
+    res.status(404).json({ error: 'Error al obtener el país' });
   }
 };
 
