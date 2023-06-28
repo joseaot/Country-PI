@@ -1,0 +1,54 @@
+.cartas{
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.boton{
+    height: 30px;
+    border-radius: 50px;
+    color: bisque;
+    background-color: #ee7300;
+    border: none;
+    box-shadow: 7px 6px 8px -3px rgba(0,0,0,0.26);
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translate(0);
+    transition: 0.25s ease-out;
+    color: bisque;
+    font-size:20;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+.boton:hover{
+    transform: scale(1.25);
+}
+
+.error{
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-inline: 10px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    font-size: 20px;
+    color: rgb(238, 255, 0);
+}

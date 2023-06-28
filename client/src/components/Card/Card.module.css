@@ -1,0 +1,26 @@
+.carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ee7300a2;
+    border: 1px solid gray;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translate(0);
+    transition: 0.25s ease-out;
+    box-shadow: 7px 6px 8px -3px rgba(0,0,0,0.26);
+    border-radius: 10px;
+    color: bisque;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.carta:hover{
+    transform: scale(1.05);
+}
+
+.banderas{
+    height: 100px;
+    width: 150px;
+}

@@ -35,7 +35,6 @@ const controllerCountryID = async (idPais) =>{
           });
           return countryId
     }
-
 }
 
 

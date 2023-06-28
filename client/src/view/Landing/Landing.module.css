@@ -1,0 +1,82 @@
+.todo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: beige;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius:40px ;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: -20px;
+}
+
+
+.logo{
+    height: 250px;
+    width: 250px;
+    margin-left: 40%;
+}
+
+.pie{
+    bottom: 2%;
+    left: 75%;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 40px;
+    padding: 5px;
+}
+
+
+
+.icono{
+    width: 40px;
+    height: 40px;
+    margin-inline: 10px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translate(0);
+    transition: 0.25s ease-out;
+    
+}
+
+.icono:hover{
+    transform: scale(1.20);
+}
+
+@media (max-width: 768px) {
+    .pie {
+      flex-direction: column;
+      align-items: center;
+      left: 85%;
+    }
+    
+    .icono {
+      margin-right: 8px;
+      margin-bottom: 5px;
+    }
+  }
+
+.boton{
+    height: 30px;
+    border-radius: 50px;
+    color: bisque;
+    background-color: #ee7300;
+    border: none;
+    box-shadow: 7px 6px 8px -3px rgba(0,0,0,0.26);
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translate(0);
+    transition: 0.25s ease-out;
+    color: bisque;
+    font-size:20;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.boton:hover{
+    transform: scale(1.25);
+}

@@ -1,0 +1,96 @@
+.Titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: bisque;
+    font-size: 75px;
+    text-shadow: 1px 4px 5px rgba(255,255,255,0.58);
+    transition: 0.25s;
+    cursor: pointer;
+   -webkit-text-stroke: 3px black;
+    margin-top: 125px;
+   
+}
+
+.Titulo:hover{
+    text-shadow: 1px 4px 5px rgba(255, 255, 255, 0.801);
+}
+
+.Detail{
+    margin-top: 80px;
+    margin-inline: 40px;
+    background-color:#ee7300a2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    color:  bisque;
+    font-size: 40px;
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px black;
+    text-align: center;
+    box-shadow: 7px 6px 8px -3px rgba(0,0,0,0.26);
+    
+}
+
+.bandera{
+    width: 700px;
+    height: 400px;
+    
+}
+
+.actividad{
+    margin-inline: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+}
+
+.CadaActividad{
+    width: 250px;
+    height: 250px;
+    padding-bottom: 10px;
+    background-color:#ee7300a2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    color:  bisque;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    box-shadow: 7px 6px 8px -3px rgba(0,0,0,0.26);
+}
+
+
+.error{
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    font-size: 12px;
+    color: rgb(238, 255, 0);
+}
+
+
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 300px;
+    color: bisque;
+    font-size: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 40px;
+    margin-top: -80px;
+}
+
+.nActividad{
+    border-bottom: 2px solid black;
+}

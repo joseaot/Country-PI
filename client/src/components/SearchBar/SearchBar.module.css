@@ -1,0 +1,25 @@
+.searchBar{
+    margin-top: 15px;
+}
+
+.input{
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    padding-inline: 10px;
+    background-color: rgba(0, 0, 0, 0.74);
+    color: bisque;
+}
+
+
+.boton{
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: bisque;
+    cursor: pointer;
+}
+
+.input::placeholder {
+    color: beige;
+}
+
