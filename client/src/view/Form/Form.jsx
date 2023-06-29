@@ -72,7 +72,7 @@ const Form = () => {
 
   const handleSend= async(event) =>{
     event.preventDefault()
-    const response = (await axios.post('http://localhost:3001/activities',form)).data
+    const response = (await axios.post('/activities',form)).data
     if(response.hasOwnProperty('id')){
       window.alert("Actividad creada")
     }else{

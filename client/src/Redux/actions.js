@@ -16,7 +16,7 @@ export const ORDER = {
 
 export const getCountries = () => {
   return async function (dispatch) {
-    const countriesDb = await axios.get("https://country-pi-production.up.railway.app/countries");
+    const countriesDb = await axios.get("/countries");
     const countries = countriesDb.data;
     dispatch({ type: GET_COUNTRIES, payload: countries });
   };
@@ -25,7 +25,7 @@ export const getCountries = () => {
 export const getCountry = (id) => {
   return async function (dispatch) {
     const countryDb = await axios.get(
-      `https://country-pi-production.up.railway.app/countries/${id}`
+      `countries/${id}`
     );
     const country = countryDb.data;
     dispatch({ type: GET_COUNTRY, payload: country });
