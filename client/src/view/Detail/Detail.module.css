@@ -94,3 +94,42 @@
 .nActividad{
     border-bottom: 2px solid black;
 }
+
+@media (max-width: 768px) {
+    .Titulo {
+      font-size: 45px;
+      margin-left: 70px;
+      margin-top: 90px;
+    }
+  
+    .Detail {
+      margin-top: 20px;
+      margin-inline: 10px;
+      font-size: 25px;
+    }
+  
+    .bandera {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  
+    .actividad {
+      margin-inline: 10px;
+      grid-template-columns: 1fr;
+    }
+  
+    .CadaActividad {
+      width: 100%;
+      height: auto;
+      padding-bottom: 10px;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+  
+    .subtitulo {
+      margin-inline: 10px;
+      font-size: 14px;
+      margin-top: -20px;
+    }
+  }

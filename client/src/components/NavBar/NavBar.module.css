@@ -68,3 +68,15 @@
 .boton:hover{
     transform: scale(1.25);
 }
+
+@media (max-width: 768px) {
+    .navbar {
+      width: 90%;
+      left: 1%;
+      right: 2%;
+    }
+  
+    .boton {
+      margin-left: 1%;
+    }
+  }

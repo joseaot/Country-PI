@@ -194,171 +194,53 @@
     transform: scale(1.25);
 }
 
-
-
-
-
-
-
-
-/* .Detail{
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    margin-inline: 200px;
-    background-color:#ee7300a2;
-    border-radius: 40px;
-    color:  bisque;
-    text-align: center;
-    box-shadow: 7px 6px 8px -3px rgba(0,0,0,0.26);
-}
-
-.container {
-    padding: 50px;
-    height: 380px; 
-    position: relative; 
-    background-color: #ff0000;
-}
-
-
-.dropdown {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.dato{
-    font-size: 30px;
-    color: bisque;
-    font-weight: 900;
-    background-color: rgba(0, 0, 0, 0.808);
-    border-radius: 40px;
-    padding-inline: 20px;
-    margin-inline: 150px;
-}
-
-.datoActividad{
-    margin-top: 40px;
-    margin-bottom: 2px;
-    font-size: 30px;
-    color: bisque;
-    font-weight: 900;
-    background-color: rgba(0, 0, 0, 0.808);
-    border-radius: 40px;
-    padding-inline: 20px;
-    margin-inline: 150px;
-
-}
-
-.datoDificultad{
-    margin-top: -250px;
-    margin-bottom: 2px;
-    font-size: 30px;
-    color: bisque;
-    font-weight: 900;
-    background-color: rgba(0, 0, 0, 0.808);
-    border-radius: 40px;
-    padding-inline: 20px;
-    margin-inline: 150px;
-}
-.paisesAgregados{
-    margin-top: -20px;
-    background-color: beige;
-    color: #000000;
-    font-size: 17px;
-    margin-inline: 250px;
-    border-radius: 40px;
-    padding-inline: 10px;
-    padding-top: 5px;
-}
-
-.sinPaises{
-    margin-top: -20px;
-    background-color: beige;
-    color: #000000;
-    font-size: 17px;
-    margin-inline: 250px;
-    border-radius: 40px;
-    padding-inline: 10px;
-    padding-top: 5px;
-    font-weight: bold;
-}
-
+@media (max-width: 768px) {
+    .Titulo {
+      font-size: 45px;
+      margin-top: 90px;
+      margin-left: 80px;
+    }
   
-.dropdownToggle {
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #cccccc;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: -10px;
-    margin-inline: 390px;
-}
+    .Detail {
+      margin-inline: 10px;
+      border-radius: 20px;
+    }
+
+    .error {
+        font-size: 10px;
+      }
   
-.dropdownMenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    margin-inline: 300px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-}
+    .dato {
+      font-size: 14px;
+      padding-inline: 10px;
+    }
   
-.dropdown.open .dropdownMenu {
-    display: contents;
-}
+    .paisesAgregados,
+    .sinPaises {
+      margin-inline: 40px;
+      padding-inline: 5px;
+      font-size: 12px;
+    }
+
+    .boton {
+      margin-inline: 10px;
+      font-size: 14px;
+    }
   
-.scrollableMenu {
-    max-height: 200px;
-    overflow-y: auto;
-    padding: 8px;
-}
+    .dropdownMenu {
+      margin-inline: 10px;
+      width: auto;
+    }
+  
+    .botonEnviar {
+      margin-inline: 10px;
+    }
+  
+    .letra {
+      font-size: 14px;
+    }
+    .preguntaUno{
+        width: 420px;
 
-.placeholder{
-    padding-left: 10px;
-    width: 500px;
-    height: 30px;
-    border: none;
-    border-radius: 40px;
-}
-
-.paises{
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    color: black;
-}
-.place{
-    border-radius: 20px;
-    width: 350px;
-    border: none;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-
-.error{
-    margin-top: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    display: flex;
-    border-radius: 20px;
-    margin-inline: 145px;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #000000;
-    font-size: 15px;
-    color: rgb(238, 255, 0);
-}
-
-
-.boton{
-    margin-top: -150px;
-}
-
-
- */
-
+    }
+  }

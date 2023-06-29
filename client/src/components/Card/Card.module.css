@@ -1,8 +1,8 @@
-.carta{
+.carta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#ee7300a2;
+    background-color: #ee7300a2;
     border: 1px solid gray;
     padding: 25px;
     cursor: pointer;
@@ -10,17 +10,29 @@
     backface-visibility: hidden;
     transform: translate(0);
     transition: 0.25s ease-out;
-    box-shadow: 7px 6px 8px -3px rgba(0,0,0,0.26);
+    box-shadow: 7px 6px 8px -3px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
     color: bisque;
     -webkit-text-stroke: 0.5px black;
-}
-
-.carta:hover{
+  }
+  
+  .carta:hover {
     transform: scale(1.05);
-}
-
-.banderas{
+  }
+  
+  .banderas {
     height: 100px;
     width: 150px;
-}
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .carta {
+      padding: 15px;
+    }
+  
+    .banderas {
+      height: 80px;
+      width: 120px;
+    }
+  }

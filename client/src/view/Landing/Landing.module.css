@@ -1,23 +1,22 @@
-.todo{
-    display:flex;
+.todo {
+    display: flex;
     flex-direction: column;
     align-items: center;
     color: beige;
     background-color: rgba(0, 0, 0, 0.637);
-    border-radius:40px ;
+    border-radius: 40px;
     margin-top: 20px;
     padding-bottom: 10px;
     padding-top: -20px;
-}
-
-
-.logo{
+  }
+  
+  .logo {
     height: 250px;
     width: 250px;
-    margin-left: 40%;
-}
 
-.pie{
+  }
+  
+  .pie {
     bottom: 2%;
     left: 75%;
     display: flex;
@@ -26,11 +25,9 @@
     background-color: rgba(0, 0, 0, 0.637);
     border-radius: 40px;
     padding: 5px;
-}
-
-
-
-.icono{
+  }
+  
+  .icono {
     width: 40px;
     height: 40px;
     margin-inline: 10px;
@@ -39,44 +36,61 @@
     backface-visibility: hidden;
     transform: translate(0);
     transition: 0.25s ease-out;
-    
-}
-
-.icono:hover{
-    transform: scale(1.20);
-}
-
-@media (max-width: 768px) {
-    .pie {
-      flex-direction: column;
-      align-items: center;
-      left: 85%;
-    }
-    
-    .icono {
-      margin-right: 8px;
-      margin-bottom: 5px;
-    }
   }
-
-.boton{
+  
+  .icono:hover {
+    transform: scale(1.2);
+  }
+  
+  .boton {
     height: 30px;
     border-radius: 50px;
     color: bisque;
     background-color: #ee7300;
     border: none;
-    box-shadow: 7px 6px 8px -3px rgba(0,0,0,0.26);
+    box-shadow: 7px 6px 8px -3px rgba(0, 0, 0, 0.26);
     -moz-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
     transform: translate(0);
     transition: 0.25s ease-out;
-    color: bisque;
-    font-size:20;
+    font-size: 20px;
     font-weight: 900;
     cursor: pointer;
-}
-
-
-.boton:hover{
+  }
+  
+  .boton:hover {
     transform: scale(1.25);
-}
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .todo {
+      margin-top: 40px;
+      padding-top: 5px;
+    }
+  
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      margin: 0 auto /* Agregado: Centrar horizontalmente */
+    }
+  
+    .pie {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; /* Agregado: Centrar verticalmente */
+      left: 20%;
+      bottom: 5%;
+    }
+  
+    .icono {
+      margin-right: 8px;
+      margin-bottom: 5px;
+    }
+  
+    .boton {
+      height: 25px;
+      font-size: 16px;
+    }
+  }
